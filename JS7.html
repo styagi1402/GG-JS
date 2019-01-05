@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS assignment-7
+        </title>
+    </head>
+    <body>
+        <p>This hot weather makes me want to <span id="1"></span> name on the beach all day long.</p>
+        <p>My heart is filled with love and <span id="2"></span>. </p>
+        <p>I like my hot dogs with mustard, relish, and <span id="3"></span>.</p>
+        <p>Flip-flops are a staple of any <span id="4"></span> summer wardrobe.</p>
+        <p>Nobody loves spring flowers more than me, except maybe bumble- <span id="5"></span>.</p>
+        <script>
+            var name, noun, verb, pnoun, adj, noun1, clr;
+            name=prompt("please enter your name.");
+            noun=prompt("enter a noun: ");
+            verb=prompt("enter a verb: ");
+            pnoun=prompt("enter a plural noun: ");
+            adj=prompt("enter an adjective: ");
+            noun1=prompt("enter a plural noun: ");
+            clr=prompt("enter a colour: ");
+            document.getElementById("1").style.color=clr;
+            document.getElementById("2").style.color=clr;
+            document.getElementById("3").style.color=clr;
+            document.getElementById("4").style.color=clr;
+            document.getElementById("5").style.color=clr;
+            document.getElementById("1").innerHTML= verb;
+            document.getElementById("2").innerHTML= pnoun;
+            document.getElementById("3").innerHTML=noun;
+            document.getElementById("4").innerHTML=adj;
+            document.getElementById("5").innerHTML=noun1;
+        </script>
+    </body>
+</html>    

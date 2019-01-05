@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS assignment-12
+        </title>
+        <script>
+            var count=0;
+            function slideShow(){
+                count++;
+                if(count==1){
+                    window.document.ss.src='2.png';
+                }
+                else if(count==2){
+                    window.document.ss.src='3.png';
+                }
+                else if(count==3){
+                    window.document.ss.src='5.png';
+                }
+                else if(count==4){
+                    window.document.ss.src='5.jpg';
+                }
+                else{
+                    window.document.ss.src='4.png';
+                    count=0;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <img name="ss" onclick="slideShow()" src='4.png'>
+    </body>
+</html> 

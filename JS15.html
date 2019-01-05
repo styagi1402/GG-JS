@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<title>Slide show (6 images)</title>
+<script>
+
+var counter = 0;
+
+function changeIt() {
+    counter++;
+
+	if (counter == 1 || counter== -4) {
+		document.searchImage.src = "2.png";
+	}
+	else if (counter == 2|| counter== -3) {
+		document.searchImage.src = "3.png";
+	}
+	else if (counter == 3 || counter== -2) {
+		document.searchImage.src = "5.png";
+	}
+	else if (counter == 4 || counter== -1 ) {
+		document.searchImage.src = "5.jpg";
+	}
+	else {
+		document.searchImage.src = "4.png";
+        counter=0;
+	}
+
+}
+function reverse(){
+    counter--;
+    
+    if (counter == 1 || counter== -4 ) {
+		document.searchImage.src = "2.png";
+	}
+	else if (counter == 2 || counter== -3) {
+		document.searchImage.src = "3.png";
+	}
+	else if (counter == 3 || counter== -2) {
+		document.searchImage.src = "5.png";
+	}
+	else if (counter == 4 || counter== -1) {
+		document.searchImage.src = "5.jpg";
+	}
+	else {
+		document.searchImage.src = "4.png";
+        counter=0;
+	}
+
+}
+
+</script>
+
+</head>
+<body>
+
+<br><br><br>
+
+
+
+<img src="4.png" name="searchImage">
+
+<form>
+<input type="button" value="next" onClick="changeIt()">
+<input type="button" value="previous" onclick="reverse()">
+</form>
+
+
+
+</body>
+</html>

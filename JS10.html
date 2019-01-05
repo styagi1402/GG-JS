@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS assignment-10
+        </title>
+    </head>
+    <body>
+        <div>
+            <img src="7.png" name="change" onmouseover="changeImage()" onmouseout="undoChange()" >
+        </div>
+        <div>
+            <img src="1.png" name="first" onmouseover="window.document.first.src='6.png'" onmouseout="window.document.first.src='1.png'">
+        </div>
+        <div>
+            <img src="3.png" name="second" onmouseover="window.document.second.src='2.png'" onmouseout="window.document.second.src='3.png'">
+        </div>
+        <div>
+            <img src="4.png" name="third" onmouseover="window.document.third.src='5.png'" onmouseout="window.document.third.src='4.png'">
+        </div>
+        <script>
+            function changeImage(){
+                window.document.first.src='6.png';
+                window.document.second.src='2.png';
+                window.document.third.src='5.png';
+            }
+            function undoChange(){
+                window.document.first.src='1.png';
+                window.document.second.src='3.png';
+                window.document.second.src='4.png';
+            }
+
+        </script>
+
+    </body>
+</html>    
